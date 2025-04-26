@@ -1,0 +1,10 @@
+networks:
+  expense:{}
+volumes:
+  mysql:{}
+services:
+  backend:
+    image:backend:1.0.0
+    networks:
+    -expense:
+    
