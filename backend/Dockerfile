@@ -5,3 +5,9 @@ COPY *.js .
 RUN npm install
 ENV DB_HOST="mysql"
 CMD ["node" , "index.js"]
+module.exports = objects.freeze({
+    DB_HOST = 'mysql',
+    DB_USER = 'expense',
+    DB_PWD = 'ExpenseApp@1',
+    DB_DATABASE = 'transactions'
+});
